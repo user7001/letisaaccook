@@ -3,62 +3,98 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#ffffff">
-  <title>Photography</title>
+  <meta name="theme-color" content="#000000">
+  <title>Isaac Lee — Photography</title>
   <style>
     * { box-sizing: border-box; }
-    html { background: #fff; }
-    body { margin: 0; padding: 12px; background: #fff; }
+    html, body { margin: 0; min-height: 100%; background: #000; }
+    body { padding: 14px; color: #fff; }
     main { max-width: 1900px; margin: 0 auto; }
-    .collage { columns: 5; column-gap: 12px; }
-    .collage img { display: block; width: 100%; height: auto; margin: 0 0 12px; break-inside: avoid; }
-    @media (max-width: 1450px) { .collage { columns: 4; } }
-    @media (max-width: 1050px) { .collage { columns: 3; } }
-    @media (max-width: 700px) { body { padding: 8px; } .collage { columns: 2; column-gap: 8px; } .collage img { margin-bottom: 8px; } }
-    @media (max-width: 380px) { .collage { columns: 1; } }
+    .gallery { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; align-items: start; }
+    .gallery img { display: block; width: 100%; height: auto; object-fit: contain; }
+    @media (max-width: 760px) {
+      body { padding: 8px; }
+      .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
+    }
+    .gallery img[hidden] { display: none; }
   </style>
 </head>
 <body>
   <main aria-label="Photography portfolio">
-    <section class="collage" aria-label="Photo collage">
-      <img src="photos/01.jpg" alt="Photograph 01" loading="lazy" decoding="async">
-      <img src="photos/02.jpg" alt="Photograph 02" loading="lazy" decoding="async">
-      <img src="photos/03.jpg" alt="Photograph 03" loading="lazy" decoding="async">
-      <img src="photos/04.jpg" alt="Photograph 04" loading="lazy" decoding="async">
-      <img src="photos/05.jpg" alt="Photograph 05" loading="lazy" decoding="async">
-      <img src="photos/06.jpg" alt="Photograph 06" loading="lazy" decoding="async">
-      <img src="photos/07.jpg" alt="Photograph 07" loading="lazy" decoding="async">
-      <img src="photos/08.jpg" alt="Photograph 08" loading="lazy" decoding="async">
-      <img src="photos/09.jpg" alt="Photograph 09" loading="lazy" decoding="async">
-      <img src="photos/10.jpg" alt="Photograph 10" loading="lazy" decoding="async">
-      <img src="photos/11.jpg" alt="Photograph 11" loading="lazy" decoding="async">
-      <img src="photos/12.jpg" alt="Photograph 12" loading="lazy" decoding="async">
-      <img src="photos/13.jpg" alt="Photograph 13" loading="lazy" decoding="async">
-      <img src="photos/14.jpg" alt="Photograph 14" loading="lazy" decoding="async">
-      <img src="photos/15.jpg" alt="Photograph 15" loading="lazy" decoding="async">
-      <img src="photos/16.jpg" alt="Photograph 16" loading="lazy" decoding="async">
-      <img src="photos/17.jpg" alt="Photograph 17" loading="lazy" decoding="async">
-      <img src="photos/18.jpg" alt="Photograph 18" loading="lazy" decoding="async">
-      <img src="photos/19.jpg" alt="Photograph 19" loading="lazy" decoding="async">
-      <img src="photos/20.jpg" alt="Photograph 20" loading="lazy" decoding="async">
-      <img src="photos/21.jpg" alt="Photograph 21" loading="lazy" decoding="async">
-      <img src="photos/22.jpg" alt="Photograph 22" loading="lazy" decoding="async">
-      <img src="photos/23.jpg" alt="Photograph 23" loading="lazy" decoding="async">
-      <img src="photos/24.jpg" alt="Photograph 24" loading="lazy" decoding="async">
-      <img src="photos/25.jpg" alt="Photograph 25" loading="lazy" decoding="async">
-      <img src="photos/26.jpg" alt="Photograph 26" loading="lazy" decoding="async">
-      <img src="photos/27.jpg" alt="Photograph 27" loading="lazy" decoding="async">
-      <img src="photos/28.jpg" alt="Photograph 28" loading="lazy" decoding="async">
-      <img src="photos/29.jpg" alt="Photograph 29" loading="lazy" decoding="async">
-      <img src="photos/30.jpg" alt="Photograph 30" loading="lazy" decoding="async">
-      <img src="photos/31.jpg" alt="Photograph 31" loading="lazy" decoding="async">
-      <img src="photos/32.jpg" alt="Photograph 32" loading="lazy" decoding="async">
-      <img src="photos/33.jpg" alt="Photograph 33" loading="lazy" decoding="async">
-      <img src="photos/34.jpg" alt="Photograph 34" loading="lazy" decoding="async">
-      <img src="photos/35.jpg" alt="Photograph 35" loading="lazy" decoding="async">
-      <img src="photos/36.jpg" alt="Photograph 36" loading="lazy" decoding="async">
-      <img src="photos/37.jpg" alt="Photograph 37" loading="lazy" decoding="async">
+    <section class="gallery" aria-label="Photography">
+      <img src="./photos-new/01.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/02.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/03.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/04.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/05.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/06.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/07.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/08.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/09.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/10.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/11.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/12.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/13.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/14.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/15.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/16.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/17.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/18.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/19.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/20.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/21.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/22.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/23.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/24.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/25.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/26.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/27.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/28.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/29.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/30.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/31.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/32.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/33.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/34.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/35.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/36.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/37.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/38.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/39.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/40.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/41.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/42.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/43.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/44.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/45.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/46.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/47.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/48.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/49.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/50.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/51.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/52.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/53.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/54.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/55.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/56.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/57.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/58.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/59.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/60.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/61.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/62.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/63.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/64.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/65.jpg" alt="" loading="lazy" decoding="async">
+      <img src="./photos-new/66.jpg" alt="" loading="lazy" decoding="async">
     </section>
   </main>
+  <script>
+    // Hide failed requests quietly while the image folder is being restored.
+    document.querySelectorAll(".gallery img").forEach((img) => {
+      img.addEventListener("error", () => { img.hidden = true; });
+    });
+  </script>
 </body>
 </html>
